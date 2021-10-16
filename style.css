@@ -8,6 +8,8 @@ body{
   background-color: #181719;
   color: white;
   font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  width: 100%;
 }
 
 header{
@@ -26,14 +28,14 @@ header .logo{
   height: 31px;
   margin: 12px 20px;
   text-align: center;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
-  /* display: grid;
+  align-items: center; */
+  display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   justify-items: center;
-  align-items: center; */
+  align-items: center;
 }
 
 header label{
@@ -89,12 +91,23 @@ header .menu-btn .nav-icon:after{
 .wrapper{
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: 0.25fr 0.75fr;
+
 }
+
+.cont-1{
+  margin: 0 0 0 20px;
+  width: 90%;
+}
+
+.cont-1 > *{
+  margin-bottom: 20px;
+}
+
 
 .cont-1-h1{
   font-style: normal;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 36px;
   line-height: 46px;font-family: 'Lora', serif;
 }
@@ -114,6 +127,66 @@ header .menu-btn .nav-icon:after{
   font-size: 14px;
   line-height: 17px;
   color: white;
-  text-decoration:none
+  text-decoration:none;
+  margin-bottom: 0
 }
 
+.cont-2{
+  position: relative;
+  width: 90%;
+  border: 1px solid green;
+}
+
+.cont-2-img{
+  background: url("/photo1.png");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%; 
+}
+
+.cont-2-name{
+  width: 100%;
+  height: 138px;
+  border: 1px solid white;
+  /* position: absolute; */
+  background-color: #181719;
+  /* top: 13.56rem;
+  left: 2.5rem; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  
+}
+.cont-2-contact-name{
+  
+  width: 100%;
+}
+.cont-2-contact-img{
+  /* background: url("/photo2.png");*/
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat; 
+  height: 36px;
+  width: 36px;
+  border-radius: 37px;
+  margin: 5px 0 0 20px
+}
+
+/* 
+@media (min-width: 810px)and (max-width:1022px){
+  .cont-2-img{
+    width:39.93rem;
+    height:26.87rem;
+  }
+
+  .cont-2-name{
+    top: 24.56rem;
+    left: 18.5rem;
+  }
+    
+} */
