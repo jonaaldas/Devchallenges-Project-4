@@ -2,6 +2,8 @@
   padding: 0;
   margin:0;
   box-sizing: border-box;
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
 }
 
 body{
@@ -28,9 +30,6 @@ header .logo{
   height: 31px;
   margin: 12px 20px;
   text-align: center;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
@@ -89,16 +88,17 @@ header .menu-btn .nav-icon:after{
 
 
 .wrapper{
+  box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.25fr 0.75fr;
-  /* height: auto; */
-  margin: 0 0 0 20px;
+  width: 95%;
+  padding: 0 0 0 1.5em;
 }
 
 .cont-1{
   width: 90%;
-  min-width: 375px;
+  min-width: 340px;
   max-width: 500px;
 }
 
@@ -134,16 +134,13 @@ header .menu-btn .nav-icon:after{
 }
 
 .cont-2{
-  /* position: relative; */
   width: 90%;
   border: 1px solid green;
-  min-width: 375px;
+  min-width: 340px;
   max-width: 500px;  
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  /* grid-template-rows: 1fr 1fr 1fr; */
   grid-template-rows: repeat(5 ,1fr);
-
   font-size: 16px;
 }
 
